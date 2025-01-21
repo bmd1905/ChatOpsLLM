@@ -1,19 +1,20 @@
-# EasyLLMOps
-[![Stars](https://img.shields.io/github/stars/bmd1905/EasyLLMOps.svg)](https://api.github.com/repos/bmd1905/EasyLLMOps)
+# ChatOpsLLM
+[![Stars](https://img.shields.io/github/stars/bmd1905/ChatOpsLLM.svg)](https://api.github.com/repos/bmd1905/ChatOpsLLM)
 
-EasyLLMOps: Effortless MLOps for Powerful Language Models.
+ChatOpsLLM: Empowering Chatbots with Effortless DevOps.
 
  [![Pipeline](./assets/easy-llmops.png)](#features)
 
 ## Introduction
 
-EasyLLMOps is a project built with Open WebUI that can be deployed on Google Kubernetes Engine (GKE) for managing and scaling language models. It offers both Terraform and manual deployment methods, and incorporates robust MLOps practices. This includes CI/CD pipelines with Jenkins and Ansible for automation, monitoring with Prometheus and Grafana for performance insights, and centralized logging with the ELK stack for troubleshooting and analysis. Developers can find detailed documentation and instructions on the project's website.
+ChatOpsLLM is a project built with Open WebUI that can be deployed on Google Kubernetes Engine (GKE) for managing and scaling language models. It offers both Terraform and manual deployment methods, and incorporates robust MLOps practices. This includes CI/CD pipelines with Jenkins and Ansible for automation, monitoring with Prometheus and Grafana for performance insights, and centralized logging with the ELK stack for troubleshooting and analysis. Developers can find detailed documentation and instructions on the project's website.
+
 
 https://github.com/user-attachments/assets/cf84a434-0dae-47b9-a93d-49a37965d968
 
 ## Features
 
-- **Ease of Use**: EasyLLMOps provides an intuitive interface and streamlined workflows that make managing LLMs simple and efficient, regardless of your experience level.
+- **Ease of Use**: ChatOpsLLM provides an intuitive interface and streamlined workflows that make managing LLMs simple and efficient, regardless of your experience level.
 - **Scalability & Flexibility**: Scale your LLM deployments effortlessly, adapt to evolving needs, and integrate seamlessly with your existing infrastructure.
 - **Reduced Complexity**: Eliminate the hassle of complex configurations and infrastructure management, allowing you to focus on building and deploying powerful LLM applications.
 - **Enhanced Productivity**: Accelerate your LLM development lifecycle, optimize performance, and maximize the impact of your language models.
@@ -144,9 +145,9 @@ Store your environment variables, such as API keys, securely in Kubernetes secre
 ```bash
 kubectl create ns model-serving
 kubens model-serving
-kubectl delete secret easyllmops-env 
-kubectl create secret generic easyllmops-env --from-env-file=.env -n model-serving
-kubectl describe secret easyllmops-env -n model-serving
+kubectl delete secret ChatOpsLLM-env 
+kubectl create secret generic ChatOpsLLM-env --from-env-file=.env -n model-serving
+kubectl describe secret ChatOpsLLM-env -n model-serving
 ```
 
 https://github.com/user-attachments/assets/fab6aa93-2f68-4f36-a4d8-4a1d955596f2
@@ -290,7 +291,7 @@ https://github.com/user-attachments/assets/d6ec020a-3e93-4ce8-bf80-b9f63b227635
 
 4.2. Add Github repository as a Jenkins source code repository.
 
-Go to Jenkins dashboard and click on `New Item`. Enter a name for your project (e.g. `easy-llmops`) and select `Multibranch Pipeline`. Click on `OK`. Click on `Configure` and then click on `Add Source`. Select `GitHub` and click on `Add`. Enter the URL of your GitHub repository (e.g. `https://github.com/bmd1905/EasyLLMOps`). In the `Credentials` field, select `Add` and select `Username with password`. Enter your GitHub username and password (or use a personal access token). Click on `Test Connection` and then click on `Save`.
+Go to Jenkins dashboard and click on `New Item`. Enter a name for your project (e.g. `easy-llmops`) and select `Multibranch Pipeline`. Click on `OK`. Click on `Configure` and then click on `Add Source`. Select `GitHub` and click on `Add`. Enter the URL of your GitHub repository (e.g. `https://github.com/bmd1905/ChatOpsLLM`). In the `Credentials` field, select `Add` and select `Username with password`. Enter your GitHub username and password (or use a personal access token). Click on `Test Connection` and then click on `Save`.
 
 https://github.com/user-attachments/assets/57c97866-caf3-4864-92c9-b91863822591
 
@@ -575,19 +576,19 @@ Please go to [Langfuse](https://cloud.langfuse.com) and [Supabase](https://supab
 ![](assets/images/demo-supabase.jpg)
 
 ## Contributing
-We welcome contributions to EasyLLMOps! Please see our CONTRIBUTING.md for more information on how to get started.
+We welcome contributions to ChatOpsLLM! Please see our CONTRIBUTING.md for more information on how to get started.
 
 ## License
-EasyLLMOps is released under the MIT License. See the LICENSE file for more details.
+ChatOpsLLM is released under the MIT License. See the LICENSE file for more details.
 
 ## Citation
-If you use EasyLLMOps in your research, please cite it as follows:
+If you use ChatOpsLLM in your research, please cite it as follows:
 ```
-@software{EasyLLMOps2024,
+@software{ChatOpsLLM2024,
   author = {Minh-Duc Bui},
-  title = {EasyLLMOps: Effortless MLOps for Powerful Language Models.},
+  title = {ChatOpsLLM: Effortless MLOps for Powerful Language Models.},
   year = {2024},
-  url = {https://github.com/bmd1905/EasyLLMOps}
+  url = {https://github.com/bmd1905/ChatOpsLLM}
 }
 ```
 
